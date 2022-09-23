@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #efefef;
+  font-family: 'Quicksand', sans-serif;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  /* to do middle position */
+}
+
+/* nav bar design start */
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: #03045e;
+  color: #ffffff;
+}
+.nav-container {
+  display: flex;
+  /* to align h1 and nav-item-container elements */
+  height: 100px;
+  align-items: center;
+  /* before use align items centre i have to define a specific height */
+}
+
+.nav-item-container {
+  margin-left: auto;
+  /* to shift to the right side of the container */
+  display: flex;
+  /* to align all the nav-item-container elements*/
+}
+
+.brand h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin-left: 24px;
+}
+.nav-item a,
+.nav-item a:visited,
+.nav-item a:active,
+.nav-item a:hover {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* nav bar design end */
+/* profile card section start */
+.profile-card-container {
+  width: 100%;
+  height: 470px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 32px;
+  display: flex;
+  /*  to align profile picture container and profile info container  */
+}
+/* profile picture section start */
+.profile-picture-container {
+  width: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* to centre image square container */
+}
+
+.image-square-container {
+  width: 300px;
+  height: 300px;
+  border: 5px solid rgb(51, 22, 146);
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* to centre image circle container*/
+}
+.image-circle-container {
+  width: 250px;
+  height: 250px;
+  border: 3px solid rgb(5, 81, 13);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* to centre image */
+  overflow: hidden;
+  /* to hide image overflow outside of the image circle container*/
+}
+.image-circle-container > img {
+  width: 100%;
+  height: 100%;
+  /* to provide image circle container same width and height to the image */
+}
+/* profile picture section end */
+/* profle info section start  */
+.profile-info-container {
+  width: 930px;
+}
+.profile-info {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.02rem;
+  color: rgb(0, 128, 255);
+}
+.profile-title {
+  font-size: 1rem;
+  font-weight: 550;
+  letter-spacing: 0.02rem;
+  text-transform: capitalize;
+  color: rgb(16, 9, 44);
+  margin-top: 7px;
+}
+.social-links {
+  margin-top: 40px;
+  display: flex;
+}
+.social-links > img {
+  width: 30px;
+  margin-left: 40px;
+}
+.skills-list {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.skill {
+  margin-right: 15px;
+  /* because every skill elements is left align */
+  background-color: #151d38;
+  color: #ffffff;
+  padding: 8px 5px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+
+  /* here no need to define width for skill element */
+}
+.about-me {
+  margin-top: 20px;
+  margin-right: 147px;
+  margin-left: 40px;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.02rem;
+  color: #151d38;
+}
+
+/* profile info section end */
+/* profile card section end */
+
+/* my skills section start */
+
+.my-skills-section {
+  width: 100%;
+  height: 420px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 32px;
+  padding: 35px 40px;
+  /* every child of this section will get a margin of 35 and 40 
+   if i want to give a margin to an element also it can can be done by giving padding to it's parent element*/
+}
+.section-heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+  color: #333333;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* creating two columns with each of 50% size */
+  margin-top: 1.5rem;
+}
+.skill-item-container {
+  display: flex;
+
+  margin-bottom: 1.5rem;
+}
+.text-container {
+  margin-left: 1.5rem;
+}
+.text-container > h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.02rem;
+  margin-top: 0.3rem;
+}
+.text-container > h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(40, 37, 37);
+  margin-top: 0.3rem;
+  letter-spacing: 0.02rem;
+}
+.text-container > p {
+  font-size: 0.8rem;
+  font-weight: 405;
+  margin-top: 0.4rem;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.04rem;
+}
+.icon-container {
+  border-radius: 10px;
+  /* here border radius provided directly to the icon container div not to the image*/
+  overflow: hidden;
+  /* that means if something is overflow over the icon container div it will be hidden*/
+}
+
+/* also it can be done by the following way
+.icon-container > img {
+  border-radius: 10px;
+} */
+
+/* my skills section end */
+
+/* my portfolio section start */
+.my-portfolios-section {
+  width: 100%;
+  height: 420px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 32px;
+  padding: 35px 40px;
+}
+
+.portfolios-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1.5rem;
+}
+
+/* after display grid i will provide margin , padding if need to its child element but not before display grid use */
+.portfolio-item-container {
+  margin-right: 2rem;
+  border: 1px solid rgb(215, 208, 208);
+  border-radius: 10px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* my portfolio section end */
